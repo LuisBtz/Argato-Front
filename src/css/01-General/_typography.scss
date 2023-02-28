@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "SaolDisplay Light";
+    src: url("../fonts/SaolDisplay-Light.eot"); /* IE9*/
+    src: url("../fonts/SaolDisplay-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/SaolDisplay-Light.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/SaolDisplay-Light.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/SaolDisplay-Light.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/SaolDisplay-Light.svg#SaolDisplay-Light") format("svg"); /* iOS 4.1- */
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "SaolDisplay Regular";
+    src: url("../fonts/SaolDisplay-Regular.eot"); /* IE9*/
+    src: url("../fonts/SaolDisplay-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/SaolDisplay-Regular.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/SaolDisplay-Regular.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/SaolDisplay-Regular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/SaolDisplay-Regular.svg#SaolDisplay-Light") format("svg"); /* iOS 4.1- */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    
+}
+
+@font-face {
+    font-family: 'Adobe Caslon Pro Regular';
+    src: url('../fonts/ACaslonPro-Regular.eot');
+    src: url('../fonts/ACaslonPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ACaslonPro-Regular.woff2') format('woff2'),
+        url('../fonts/ACaslonPro-Regular.woff') format('woff'),
+        url('../fonts/ACaslonPro-Regular.ttf') format('truetype'),
+        url('../fonts/ACaslonPro-Regular.svg#ACaslonPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Bold';
+    src: url('../fonts/TTNorms-Bold.eot');
+    src: url('../fonts/TTNorms-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTNorms-Bold.woff2') format('woff2'),
+        url('../fonts/TTNorms-Bold.woff') format('woff'),
+        url('../fonts/TTNorms-Bold.ttf') format('truetype'),
+        url('../fonts/TTNorms-Bold.svg#TTNorms-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Medium';
+    src: url('../fonts/TTNorms-Medium.eot');
+    src: url('../fonts/TTNorms-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTNorms-Medium.woff2') format('woff2'),
+        url('../fonts/TTNorms-Medium.woff') format('woff'),
+        url('../fonts/TTNorms-Medium.ttf') format('truetype'),
+        url('../fonts/TTNorms-Medium.svg#TTNorms-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --tituloLight: "SaolDisplay Light", serif;
+    --tituloRegular: "SaolDisplay Regular", serif;
+    --regular: "Adobe Caslon Pro Regular", serif;
+    --bold: "TT Norms Bold", sans-serif;
+    --ttMedium: "TT Norms Medium", sans-serif;
+    --black: #222222;
+    --white: #E2D2C4;
+    --red: #FF4D00;
+    --container: 1350px;
+}
+
+h1 {
+    font-size: 4rem;
+    @media (max-width: 680px) {
+        font-size: 3.5rem;
+    }
+}
+

@@ -1,0 +1,84 @@
+#mezcal {
+    section.mezcales {
+        max-width: var(--container);
+        margin: 0 auto;
+        .cont {
+            .slick-slide {
+                transform: scale(0.9);
+                transition: all 350ms ease-in-out;
+                opacity: 0.3;
+            }
+            .slick-current {
+                transform: scale(1);
+                opacity: 1;
+            }
+        .sliderMezcales {
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            @media (max-width: 1000px) {
+                flex-direction: column;
+            }
+            h2 {
+                width: 33.333%;
+                font-size: 4vw;
+                color: var(--red);
+                font-family: var(--tituloLight);
+                @media (max-width: 1000px) {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 3rem;
+                    margin-bottom: 30px;
+                }
+            }
+            img {
+                width: 33.333%;
+                @media (max-width: 1000px) {
+                    width: 70%;
+                    margin: 0 auto;
+                }
+            }
+            .info {
+                width: 33.333%;
+                padding-left: 50px;
+                @media (max-width: 1000px) {
+                    width: 100%;
+                    margin-top: 50px;
+                    text-align: center;
+                    padding-left: 0;
+                }
+                p {
+                    margin-bottom: 50px;
+                }
+                ul {
+                    width: 100%;
+                    margin-bottom: 50px;
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-bottom: 10px;
+                        padding-top: 10px;
+                        border-bottom: solid 1px var(--red);
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                    }
+                }
+                a {
+                    background-color: var(--red);
+                    color: var(--white);
+                    padding: 10px 25px;
+                    font-family: var(--bold);
+                    text-transform: uppercase;
+                    @media (max-width: 1000px) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    }
+}

@@ -1,0 +1,102 @@
+#home {
+    section.slider {
+        position: relative;
+        padding: 100px 50px;
+        box-sizing: content-box;
+        max-width: var(--container);
+        margin: 0 auto;
+        .slick-prev {
+            display: none !important;
+        }
+        .movil {
+            display: none;
+            @media (max-width: 750px) {
+                display: block;
+                color: white;
+                background-color: var(--red);
+                margin-top: 80px;
+                padding: 20px;
+                font-size: 1.2rem;
+                font-family: var(--ttMedium);
+                text-transform: uppercase;
+                width: 200px;
+                margin: 50px auto 0;
+            }
+        }
+        .arrow {
+            width: 50px;
+            position: absolute;
+            right: 50px;
+            cursor: pointer;
+            display: none !important; 
+            @media (max-width: 750px) {
+                display: block !important;
+                bottom: 20px; 
+            }
+        }
+        .mezcales {
+            position: relative;
+            .mezcal {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 5px;
+                @media (max-width: 750px) {
+                    position: relative;
+                    display: block;
+                    padding: 180px 50px 0;
+                }
+                .text {
+                    width: 50%;
+                    position: relative;
+                    z-index: 1;
+                    @media (max-width: 750px) {
+                        position: absolute;
+                        height: 100%;
+                    }
+                    h2 {
+                        font-size: 13vw;
+                        color: var(--red);
+                        text-transform: uppercase;
+                        font-family: var(--tituloLight);
+                        @media (max-width: 750px) {
+                            position: absolute;
+                            top: -110px;
+                            font-size: 15vw;
+                        }
+                    }
+                    p {
+                        margin-top: 100px;
+                        font-size: 1.2rem;
+                        margin-bottom: 50px;
+                        @media (max-width: 750px) {
+                            display: none;
+                        }
+                    }
+                    a {
+                        color: var(--red);
+                        font-family: var(--bold);
+                        border-bottom: solid 1px var(--red);
+                        padding-bottom: 5px;
+                        text-transform: uppercase;
+                        @media (max-width: 750px) {
+                            display: none;
+                        }
+                    }
+                }
+                .image {
+                    img {
+                        height: 650px;
+                        width: 100%;
+                        object-fit: cover;
+                        @media (max-width: 750px) {
+                            width: 100%;
+                            height: auto;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

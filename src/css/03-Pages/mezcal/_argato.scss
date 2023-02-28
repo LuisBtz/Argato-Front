@@ -1,0 +1,28 @@
+#mezcal {
+    section.argato {
+        text-align: center;
+        max-width: var(--container);
+        margin: 150px auto 50px;
+        padding: 0 50px;
+        h1 {
+            font-family: var(--tituloLight);
+            color: var(--red);
+            margin-bottom: 100px;
+            @media (max-width: 750px) {
+                font-size: 2.5rem;
+            }
+        }
+        img {
+            width: 300px;
+            margin-bottom: 100px;
+            @media (max-width: 750px) {
+                width: 150px;
+            }
+        }
+        p {
+            max-width: 720px;
+            margin: 0 auto;
+            line-height: 1.2;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+#home {
+    .hero {
+        display: flex;
+        height: 70vh;
+        @media (max-width: 680px) {
+            flex-direction: column;
+        }
+        &__imagen {
+            width: 70%;
+            height: 100%;
+            @media (max-width: 900px) {
+                width: 70%;
+            }
+            @media (max-width: 680px) {
+                width: 100%;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__texto {
+            align-self: center;
+            @media (max-width: 900px) {
+                width: 30%;
+            }
+            @media (max-width: 680px) {
+                width: 100%;
+            }
+            &--h1 {
+                width: 390px;
+                font-family: var(--tituloLight);
+                position: relative;
+                right: 100px;
+                @media (max-width: 900px) {
+                    right: 200px;
+                }
+                @media (max-width: 680px) {
+                    position: static;
+                    width: 100%;
+                    text-align: left;
+                    padding: 30px
+                }
+            }
+        }
+    }
+}

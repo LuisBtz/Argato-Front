@@ -1,0 +1,32 @@
+@use '01-General/reset';
+@use '01-General/typography';
+@use '01-General/slick';
+@use '01-General/slick-theme';
+
+@use '02-Layout/general';
+@use '02-Layout/header';
+@use '02-Layout/nav';
+@use '02-Layout/footer';
+
+// Home
+@use '03-Pages/home/hero';
+@use '03-Pages/home/marquee';
+@use '03-Pages/home/description';
+@use '03-Pages/home/slider';
+@use '03-Pages/home/ourFarm';
+
+//Mezcal
+@use '03-Pages/mezcal/heroMezcal';
+@use '03-Pages/mezcal/mezcales';
+@use '03-Pages/mezcal/argato';
+
+//Masters
+
+
+@use '03-Pages/masters/heroMasters';
+@use '03-Pages/masters/sliderMasters';
+@use '03-Pages/masters/ourPeople';
+
+//FARM
+@use '03-Pages/farm/heroFarm';
+@use '03-Pages/farm/mid';

@@ -1,0 +1,96 @@
+#home {
+    .description{
+    display: flex;
+    height: 550px;
+    @media (max-width: 680px) {
+        flex-direction: column;
+        height: auto;
+    }
+    .width {
+        width: 66.66666% !important;
+        @media (max-width: 680px) {
+            width: 100% !important;
+        }
+        img {
+            transform: scale(1.1) !important;
+            @media (max-width: 680px) {
+                transform: none !important;
+            }
+        }
+    }
+    .width0 {
+        width: 0% !important;
+        @media (max-width: 680px) {
+            width: 100% !important;
+        }
+    }
+        .description__iz {
+            width: 33.333333%;
+            transition: width 350ms ease-in-out;
+            overflow: hidden;
+            @media (max-width: 680px) {
+                width: 100%;
+                overflow: initial;
+                height: 300px;
+            }
+            img {
+                height: 100%;
+                object-fit: cover;
+                transition: transform 350ms ease-in-out 150ms;
+            }
+        }
+        .description__ce {
+            width: 33.333333%;
+            text-align: center;
+            height: calc(100% - 50px);
+            @media (max-width: 680px) {
+                width: 100%;
+            }
+            .top {
+                background-color: var(--black);
+                padding: 0 20px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h2 {
+                    font-family: var(--ttMedium);
+                    color: var(--red);
+                }
+            }
+            .main {
+                background-color: var(--white);
+                color: var(--black);
+                padding: 50px 30px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p {
+                    line-height: 1.2;
+                    margin-bottom: 50px;
+                }
+            }
+            img {
+                width: 100px;
+            }
+        }
+        .description__de {
+            width: 33.333333%;
+            transition: width 350ms ease-in-out;
+            overflow: hidden;
+            @media (max-width: 680px) {
+                width: 100%;
+                overflow: initial;
+                height: 300px;
+            }
+            img {
+                height: 100%;
+                object-fit: cover;
+                transition: transform 350ms ease-in-out 150ms;
+            }
+        }
+    }
+
+}

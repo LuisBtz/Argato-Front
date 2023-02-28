@@ -1,0 +1,33 @@
+#mezcal {
+    section.hero {
+        max-width: var(--container);
+        margin: 0 auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+        box-sizing: content-box;
+        position: relative;
+        .arrows {
+            
+            img {
+                width: 30px;
+                cursor: pointer;
+            }
+            .arrowLeft {
+                top: 50%;
+                transform: translateY(-50%);
+                left: 100px;
+                position: absolute;
+                z-index: 5;
+            }
+            .arrowRight {
+                top: 50%;
+                transform: translateY(-50%);
+                right: 100px;
+                position: absolute;
+                z-index: 5;
+            }
+        }
+    }
+}
